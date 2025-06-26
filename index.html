@@ -2,88 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SmartTile – Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       text-align: center;
+      background-color: #f7f7f7;
+      padding: 40px;
+      margin: 0;
     }
 
     img {
-      max-width: 100%;
+      max-width: 400px;
       height: auto;
       margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       margin-bottom: 30px;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      font-size: 1em;
-      width: 300px;
-      max-width: 90%;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 1em;
-      background-color: #1a73e8;
-      color: white;
+    iframe {
       border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0c59cf;
+      width: 100%;
+      max-width: 640px;
+      height: 483px;
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9em;
-      color: #aaa;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <img src="smarttile_banner.png" alt="SmartTile Banner" />
+  <img src="smarttile_banner.png" alt="SmartTile logo">
 
-  <h1>SmartTile is coming soon!</h1>
-  <p>Enter your email below to get notified when we launch:</p>
+  <h1>SmartTile is coming soon</h1>
+  <p>Enter your email below to be notified when we launch:</p>
 
-  <form action="#" method="POST">
-    <input type="email" name="email" placeholder="your@email.com" required />
-    <button type="submit">Notify Me</button>
-  </form>
+  <!-- ✅ Your actual Google Form -->
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSen8iykNeOSG-OBeN1UweiTTdRv6-GmozYPwSrFgvlmIqmqLw/viewform?embedded=true" 
+    width="640" 
+    height="483" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0">
+    Loading…
+  </iframe>
 
   <footer>
     &copy; 2025 SmartTile. All rights reserved.
